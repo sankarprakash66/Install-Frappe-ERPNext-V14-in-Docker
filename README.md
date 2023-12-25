@@ -16,13 +16,13 @@ Pre-requisites
 
 Offical GitHub URL
 
-#Docker
+# Docker
 https://www.docker.com/
 
-#Docker Hub
+# Docker Hub
 https://hub.docker.com/
 
-#ERPNext
+# ERPNext
 https://github.com/frappe/erpnext
 
 STEP 0 Setup User in Root
@@ -37,24 +37,24 @@ sudo apt-get update
 
 STEP 1 Install Docker
 
-#(search docker in current apt files)
+# (search docker in current apt files)
 sudo apt-cache search docker
 
 sudo apt-get install docker docker.io
 
-#(docker group adding)
+# (docker group adding)
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
-#(docker version)
+# (docker version)
 sudo docker -v
-#(docker status active (running))
+# (docker status active (running))
 sudo systemctl status docker
 
-#(docker all Containers list)
+# (docker all Containers list)
 sudo docker ps -a
 
-#(docker images list local downloads)
+# (docker images list local downloads)
 sudo docker images
 
 STEP 2 install Docker Compose
@@ -67,10 +67,11 @@ sudo apt-get install dbench
 
 STEP 4 Pull And Run The ERPNext in Docker
 
-#(search docker hub image files)
+# (search docker hub image files)
 sudo docker search erpnext14
 
-#(pulling docker hub image files to local system)
+# (pulling docker hub image files to local system)
+
 sudo docker pull sankarprakash/erp14
 
 sudo docker images
